@@ -9,7 +9,7 @@ export const env = createEnv({
     NEXT_PUBLIC_API_BASE_URL: z.string().url(),
   },
   runtimeEnv: {
-    VERCEL_URL: process.env.APP_URL,
+    VERCEL_URL: process.env.VERCEL_URL,
     NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL,
   },
 })
