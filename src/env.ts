@@ -3,13 +3,13 @@ import { z } from 'zod'
 
 export const env = createEnv({
   server: {
-    VERCEL_URL: z.string().url(),
+    APP_URL: z.string().url(),
   },
   client: {
     NEXT_PUBLIC_API_BASE_URL: z.string().url(),
   },
   runtimeEnv: {
-    VERCEL_URL: process.env.VERCEL_URL,
     NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL,
+    APP_URL: process.env.APP_URL,
   },
 })
